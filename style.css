@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculator-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.tip-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.tip-btn {
+    padding: 8px;
+    background: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tip-btn.active {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.custom-tip input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.people-control {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.people-control button {
+    width: 40px;
+    height: 40px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.people-control input {
+    text-align: center;
+    width: 70px;
+}
+
+.results {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-value {
+    font-size: 22px;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.total-bill .result-value {
+    color: #4caf50;
+    font-size: 24px;
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background: #ff5252;
+}
+
+@media (max-width: 450px) {
+    .tip-buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
