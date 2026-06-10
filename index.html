@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="tracking-grid">
+            <div class="profile-card">
+                <div class="user-info">
+                    <div class="user-avatar">
+                       <span>👩‍💻</span> 
+                    </div>
+                    <div class="report-text">REPORT FOR</div>
+                    <div class="user-name">
+                        June<span>Chemjor</span>
+                    </div>
+                </div>
+                <div class="timeframe-buttons">
+                    <button class="time-btn" data-time="daily">Daily</button>
+                    <button class="time-btn" data-time="weekly">Weekly</button>
+                    <button class="time-btn" data-time="monthly">Monthly</button>
+                </div>
+            </div>
+            <div class="activities-grid" id="cards-container"></div>
+        </div>
+        <footer>Click any card for details • Time tracking dashboard</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
