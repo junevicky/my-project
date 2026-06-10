@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background: #0a0c1a;
+    padding: 2rem;
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tracking-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 1.5rem;
+}
+
+/* Profile Card */
+.profile-card {
+    background: #1e2030;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.user-info {
+    background: linear-gradient(135deg, #5842e8, #3a2c9e);
+    padding: 2rem;
+}
+
+.user-avatar {
+    width: 70px;
+    height: 70px;
+    background: #f3e9c0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.user-avatar span {
+    font-size: 2rem;
+}
+
+.report-text {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.user-name {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.user-name span {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+.timeframe-buttons {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.time-btn {
+    background: none;
+    border: none;
+    color: #8f92b0;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    text-align: left;
+}
+
+.time-btn:hover {
+    color: white;
+}
+
+.time-btn.active {
+    color: white;
+    font-weight: bold;
+}
+
+/* Cards Grid */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.activity-card {
+    background: #1e2030;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card-header-bg {
+    height: 60px;
+    position: relative;
+}
+
+.card-icon {
+    position: absolute;
+    right: 1rem;
+    top: -0.3rem;
+    font-size: 2.8rem;
+}
+
+.card-content {
+    background: #252838;
+    margin-top: -1rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.activity-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.activity-name {
+    color: white;
+    font-weight: 600;
+}
+
+.menu-dots {
+    color: #b0b3d0;
+    cursor: pointer;
+}
+
+.current-time {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0.3rem 0;
+}
+
+.previous-time {
+    color: #b0b3d0;
+    font-size: 0.8rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #5a5e7e;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 700px) {
+    .tracking-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeframe-buttons {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
